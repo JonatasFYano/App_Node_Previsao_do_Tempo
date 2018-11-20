@@ -5,7 +5,7 @@ function geocodeAdress(adress){
     return new Promise((resolve, reject) =>{
         var encodedAddress = encodeURIComponent(adress);
         request({
-            url: 'http://www.mapquestapi.com/geocoding/v1/address?key=zYYyNbvhsYGiE009abCUxyuNGAHjBCEC&location=' + encodedAddress,
+            url: 'http://www.mapquestapi.com/geocoding/v1/address?key=x&location=' + encodedAddress,
             json: true,
         }, (error, response, body) => {
             if(body){
