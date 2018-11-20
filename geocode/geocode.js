@@ -6,7 +6,6 @@ function geocodeAdress(adress){
         var encodedAddress = encodeURIComponent(adress);
         request({
             url: 'http://www.mapquestapi.com/geocoding/v1/address?key=zYYyNbvhsYGiE009abCUxyuNGAHjBCEC&location=' + encodedAddress,
-            proxy:'http://proxysp.vivo.com.br:8080',
             json: true,
         }, (error, response, body) => {
             if(body){
